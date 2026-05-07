@@ -1,0 +1,14 @@
+{
+  "actions" : {
+    "build" : {
+      "script" : "\n"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/zsh\nopen $1"
+    }
+  },
+  "arguments" : [
+    "${File}"
+  ]
+}
