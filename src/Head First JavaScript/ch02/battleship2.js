@@ -1,7 +1,13 @@
 // here a the three location variables, and we set a ship at location 3, 4 & 5
-let location1 = 3;
-let location2 = 4;
-let location3 = 5;
+// let location1 = 3;
+// let location2 = 4;
+// let location3 = 5;
+
+// ☑ Generate the ship location randomly
+let randomLoc = Math.floor(Math.random() * 5);
+let location1 = randomLoc;
+let location2 = location1 + 1;
+let location3 = location2 + 1;
 
 // three more to deal with user guess
 let guess;
@@ -10,10 +16,9 @@ let guesses = 0;
 
 // finally the variable that shows if a ship is sunk
 let isSunk = false;
-
 // main loop that runs until the ship is sunk
 // ☑ create loop and get user guess
-while (isSunk) {
+while (isSunk == false) {
 	guess = prompt("Ready, aim, fire! (enter a number from 0-6):");
 	
 	// ☑ Check user guess
